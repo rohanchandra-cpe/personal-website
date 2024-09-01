@@ -1,26 +1,77 @@
 <head>
     <link href="https://fonts.cdnfonts.com/css/jetbrains-mono-2" rel="stylesheet">
     <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: left;
+            font-size: 20;
+        }
         body{
             font-family:"JetBrains Mono", monospace;
             background-color: black;
             color: white;
+        }
+        img {
+            border-radius: 100px;
+            max-width: 100%;
+        }
+        .social_media_links {
+            margin-top: 5px;
+            font-size: 20;
+            text-align: center;
         }
     </style>
 </head>
 <html>
     <body>
         <div>
-            <h1 style="text-align: center;">
+            <h1 style="text-align: center; font-size: 50; margin-bottom: 5px;">
                 Rohan Chandra
             </h1>
-            <hr style="width: 50%; height: 2px; background-color: white; border: none;">
+            <hr style="width: 50%; height: 1px; background-color: white; border: none; margin-bottom: 25;">
         </div>
-        <a href=""></a>
-        <div>
-            <p style="text-align: center; font-size: 20;">
-                Welcome to my personal website. I have listed all of my 
-                accomplishments here for you to peruse at your leisure.
+        <div class="container">
+            <img src="images/headshot.jpeg">
+        </div>
+        <div class="social_media_links">
+            <a href="https://x.com/rohanchandracpe" target="_blank">
+                <img src="images/x_icon.avif">
+            </a>
+        </div>
+        <div class="container">
+            <span style="font-size: 25;">
+                <strong>
+                    Bio
+                </strong>
+            </span>
+            <p>
+                Hi! I'm Rohan Chandra. Thanks for visiting my website! <br><br>
+
+                I'm 24 years old, and am currently an Associate Software Engineer for Northrop Grumman,
+                working in their Dulles office. I have a BS in Computer Engineering, with a minor in
+                business from the University of Virginia (May, 2022), and I'm currently pursuing a Master's 
+                in Robotics and Autonomous Systems from Johns Hopkins University. 
+            </p>
+            <span style="font-size: 25;">
+                <strong>
+                    Notable Projects
+                </strong>
+            </span>
+            <div>
+                <p>
+                    Here are some of my notable projects.
+                </p>
+            </div>
+            <span style="font-size: 25;">
+                <strong>
+                    Resume
+                </strong>
+            </span>
+            <p>
+                My current resume.
             </p>
         </div>
     </body>
