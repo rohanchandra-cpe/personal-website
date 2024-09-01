@@ -23,6 +23,20 @@
             font-size: 20;
             text-align: center;
         }
+        a {
+        color: green; /* Change this to your desired color */
+        text-decoration: none; /* Optional: Remove underline */
+        }
+
+        /* Styling for links that have been visited */
+        a:visited {
+        color: green; /* Ensure visited links have the same color as non-visited */
+        }
+
+        /* Styling for links when hovered over */
+        a:hover {
+        color: darkgreen; /* Change this to your desired hover color */
+        }
     </style>
 </head>
 <html>
@@ -45,36 +59,187 @@
             </a>
         </div>
         <div class="container">
-            <span style="font-size: 25;">
-                <strong>
-                    Bio
-                </strong>
-            </span>
+            <div class="toc">
+                <span style="font-size: 25;"><u>Table of Contents</u></span>
+                <ul>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#notable_projects">Notable Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#featured_articles">Featured Articles</a></li>
+                    <li><a href="#highlighted_coursework">Highlighted Coursework</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </div>
+            <section id="bio">
+                <span style="font-size: 25;">
+                    <strong>
+                        <u>
+                            Bio
+                        </u>
+                    </strong>
+                </span>
+            </section>
             <p>
                 Hi! I'm Rohan Chandra. Thanks for visiting my website! <br><br>
 
                 I'm 24 years old, and am currently an Associate Software Engineer for Northrop Grumman,
-                working in their Dulles office. I have a BS in Computer Engineering, with a minor in
-                business from the University of Virginia (May, 2022), and I'm currently pursuing a Master's 
-                in Robotics and Autonomous Systems from Johns Hopkins University. 
+                working in their Dulles office. I have a BS in Computer Engineering with a Business Minor
+                from the University of Virginia (May, 2022). I'm currently pursuing a Master's of Science
+                in Robotics and Autonomous Systems from Johns Hopkins University (December, 2026). In my free
+                time I enjoy 3D-printing, crocheting, exercising, and card making!
             </p>
-            <span style="font-size: 25;">
-                <strong>
-                    Notable Projects
-                </strong>
-            </span>
+            <section id="notable_projects">
+                <span style="font-size: 25;">
+                    <strong>
+                        <u>
+                            Notable Projects
+                        </u>
+                    </strong>
+                </span>
+            </section>
             <div>
-                <p>
-                    Here are some of my notable projects.
-                </p>
+                <ul style="list-style-type: square;">
+                    <li><u>RAG Powered AI Agent - GSA Federal AI Hackathon</u></li>
+                        <span style="font-size: 14;">
+                            Skills: Python, RAG (Retrieval Augmented Generation), NLP (Natural Language Processing), LLMs (Large Language Models), Cohere, Streamlit
+                        </span>
+                        <p style="font-size: 16;">
+                            I built a RAG Powered AI Agent to synthesize the numerous hard-to-read, verbose, and scattered help articles
+                            on USDA.gov into a single source. Users could then send natural language queries to the chatbot and recieve
+                            natural language responses back.
+                            <strong style="background-color: green;">
+                                Placed in the top 10 finalists among 50+ teams scattered across the East Coast.
+                            </strong>
+                        </p>
+                        <div style="text-align: center;">
+                            <video width="600" controls style="display: block; margin: auto;">
+                              <source src="videos/GSA_Hackathon_Demo.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <br>
+                    <li><u>RobotGo - Volunteer FIRST Robotics Coach @ Nova Labs</u></li>
+                        <span style="font-size: 14;">
+                            Skills: Java, Python, OpenCV, Tensorflow, Video Editing, Public Speaking
+                        </span>
+                        <p style="font-size: 16;">
+                            Led the creation and development of the robotics software education program for 
+                            Nova Labs Robotics, ensuring that its 5 FTC (First Tech Challenge) teams receievd
+                            the training needed to become excellent developers and future leaders. <br><br>
+
+                            Established and taught RobotGo, an 8 week FTC Software bootcamp giving students
+                            hand-on experience with robotics programming concepts (object recognition, sensor fusion,
+                            obstacle avoidance, odometry, tele operation and autonomous movement) 
+                            and software development best practices e.g. using software version control systems.
+                            Video lectures were produced as well, and can be seen on the
+                            <a href="https://www.youtube.com/@novalabsyouthroboticsprogr5910/videos" target="_blank">
+                                Nova Labs Robotics YouTube channel.
+                            </a><br><br>
+
+                            <strong style="background-color: green;">
+                                As a result, students have advanced to the state championships the past two seasons,
+                                and regularly volunteer to help rookie teams develop their own software skills.
+                            </strong>
+
+                            <div style="text-align: center;">
+                                <iframe width="600" height="400" 
+                                    src="https://www.youtube.com/embed/videoseries?list=PLtkMAUO0_qMBUIjW7rCXaQqFOIeaKv8SS" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </p>
+                    <li><u>TrueForm - UVA HooHacks 2022</u></li>
+                        <span style="font-size: 14;">
+                            Skills: Python, OpenCV, TensorFlow, Machine Learning
+                        </span>
+                        <p style="font-size: 16;">
+                            Built TrueForm as a submission to the HooHacks 2022 Hackathon competition. TrueForm
+                            analyzes real-time video of users performing exercises to spot and highlight potential 
+                            injury-causing form mistakes. 
+                        </p>
+                        <div style="text-align: center;">
+                            <iframe width="600" height="338" 
+                                src="https://www.youtube.com/embed/QxzVxTfeq6U?si=KlX00xj4pM8zHJ6y" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <br>
+                    <li><u>Virtual Fitness Trainer - UVA HooHacks 2021</u></li>
+                        <span style="font-size: 14;">
+                            Skills: Python, AR (Augmented Reality), echoAR, ReactJS
+                        </span>
+                        <p style="font-size: 16;">
+                            Created Virtual Fitness Trainer, an echoAR-powered augemented reality fitness app that 
+                            shows guides users in performing complex exercises like squats by providing them a human-like
+                            avatar that they can follow. 
+                            <strong style="background-color: green;">
+                                Achieved a finalist position in our category (Health and Wellness).
+                                Won the "echoAR - Best Use of echoAR" award, and was invited to participate in 
+                                the Microsoft Garage program.
+                            </strong>
+                        </p>
+                        <div style="text-align: center;">
+                            <iframe width="600" height="338" 
+                                src="https://www.youtube.com/embed/RANl3PLUaHY?si=f_5-nu3O30GuEBZp" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                            <img src="videos/vft_demonstration.gif" alt="Description of GIF" width="300">
+
+                        </div>
+                        <br>
+                </ul>
             </div>
-            <span style="font-size: 25;">
-                <strong>
-                    Resume
-                </strong>
-            </span>
+            <section id="resume">
+                <span style="font-size: 25;">
+                    <u>
+                        Resume
+                    </u>
+                </span>
+            </section>
+            
             <p>
-                My current resume.
+                <a href="pdfs/8_20_2024_Resume.pdf" download="rohanchandraresume.pdf">Download</a>
+            </p>
+            <div style="text-align: center;">
+                <iframe src="pdfs/8_20_2024_Resume.pdf" width="850" height="1000" style="border: none;">
+                </iframe>
+            </div>
+            <br><br>
+            <section id="featured_articles">
+                <span style="font-size: 25;">
+                    <u>
+                        Featured Articles
+                    </u>
+                </span>
+            </section>
+            <p>
+                Articles where I've been mentioned.
+            </p>
+            <section id="highlighted_coursework">
+                <span style="font-size: 25;">
+                    <u>
+                        Highlighted Coursework
+                    </u>
+                </span>
+            </section>
+            <p>
+                courses that I think are relevant
+            </p>
+            <section id="skills">
+                <span style="font-size: 25;">
+                    <u>
+                        Skills
+                    </u>
+                </span>
+            </section>
+            <p>
+                skills that make me stand out
             </p>
         </div>
     </body>
