@@ -41,12 +41,14 @@
 </head>
 <html>
     <body>
-        <div>
-            <h1 style="text-align: center; font-size: 50; margin-bottom: 5px;">
-                Rohan Chandra
-            </h1>
-            <hr style="width: 50%; height: 1px; background-color: white; border: none; margin-bottom: 25;">
-        </div>
+        <section id="top">
+            <div>
+                <h1 style="text-align: center; font-size: 50; margin-bottom: 5px;">
+                    Rohan Chandra
+                </h1>
+                <hr style="width: 50%; height: 1px; background-color: white; border: none; margin-bottom: 25;">
+            </div>
+        </section>
         <div class="container">
             <img src="images/headshot.jpeg">
         </div>
@@ -60,8 +62,10 @@
         </div>
         <div class="container">
             <div class="toc">
-                <span style="font-size: 25;"><u>Table of Contents</u></span>
-                <ul>
+                <strong>
+                    <span style="font-size: 25;"><u>Table of Contents</u></span>
+                </strong>
+                <ul style="list-style-type: square;">
                     <li><a href="#bio">Bio</a></li>
                     <li><a href="#notable_projects">Notable Projects</a></li>
                     <li><a href="#resume">Resume</a></li>
@@ -204,7 +208,7 @@
             </section>
             
             <p>
-                <a href="pdfs/8_20_2024_Resume.pdf" download="rohanchandraresume.pdf">Download</a>
+                <a href="pdfs/8_20_2024_Resume.pdf" download="rohanchandraresume.pdf">Download Resume</a>
             </p>
             <div style="text-align: center;">
                 <iframe src="pdfs/8_20_2024_Resume.pdf" width="850" height="1000" style="border: none;">
@@ -219,7 +223,13 @@
                 </span>
             </section>
             <p>
-                Articles where I've been mentioned.
+                <ul style="list-style-type: square;">
+                    <li>
+                        <a style="font-size: 18;" href="https://www.govexec.com/technology/2024/08/hackathon-imagines-federal-agency-websites-enhanced-artificial-intelligence/398505/" target="_blank">
+                            Featured in www.govexec.com regarding the RAG AI Agent
+                        </a>
+                    </li>
+                </ul>
             </p>
             <section id="highlighted_coursework">
                 <span style="font-size: 25;">
@@ -229,7 +239,30 @@
                 </span>
             </section>
             <p>
-                courses that I think are relevant
+                <ul style="font-size: 18; list-style-type: square;">
+                    <li>
+                        Johns Hopkins University - Artificial Intelligence
+                    </li>
+                    <p style="font-size: 16;">
+                        Wrote 13 Artificial Intelligence algorithms from scratch, covering topics including, but not limited to, Reinforcement
+                        Learning, Naive Bayes Classifiers, Decision Trees, State Space Search, and Constraint Satisfaction Problems
+                    </p>
+                    <li>
+                        University of Virginia - F1/10 Autonomous Vehicles
+                    </li>
+                    <p style="font-size: 16;">
+                        Implemented Perception, Planning, and Control algorithms using ROS in Python. Because of COVID-19, algorithms
+                        were tested on a simulated robot in Rviz. Algorithms developed included PID, Follow-the-Gap, and SLAM
+                    </p>
+                    <li>
+                        University of Virginia - Embedded Systems and Robotics
+                    </li>
+                    <p style="font-size: 16;">
+                        Assembled and programmed a line-following robot using the TI-RSLK MAX Robot Learning Kit. Planned the control flow
+                        using a Mealy FSM and used sensor data from bump and line sensors to inform a PWM Control Loop how to run the motors.
+                        Achieved the second-fastest time in a race against my peers
+                    </p>
+                </ul>
             </p>
             <section id="skills">
                 <span style="font-size: 25;">
@@ -238,9 +271,43 @@
                     </u>
                 </span>
             </section>
-            <p>
-                skills that make me stand out
-            </p>
+            <ul style="font-size: 18; list-style-type: square;">
+                <li>
+                    <strong>
+                        Programming Languages:
+                    </strong>
+                    Python, C++, Java, C, Bash, Arduino C
+                </li>
+                <br>
+                <li>
+                    <strong>
+                        ML Tools/Frameworks:
+                    </strong>
+                    RAG, NLP, LLMs, Word Embeddings, Cohere, Numpy, Pandas, Sci-Kit Learn, Seaborn, Pytorch, Tensorflow
+                </li>
+                <br>
+                <li>
+                    <strong>
+                        Other Tools/Frameworks:
+                    </strong>
+                    ROS, ROS2, MATLAB, Rviz, MySQL, Multisim, Ultiboard, Django, AutoCAD Inventor Certified 2016
+                </li>
+                <br>
+                <li>
+                    <strong>
+                        OS/Container Technology:
+                    </strong>
+                    Linux, Docker, Kubernetes, Windows, MacOS, Jenkins, Nexus
+                </li>
+                <br>
+                <li>
+                    <strong>
+                        Development Tools:
+                    </strong>
+                    Atlassian Suite (Confluence, Bitbucket, Jira), VSCode, GitHub
+                </li>
+            </ul>
+            <a href="#top" style="text-align: center;">Back to Top</a>
         </div>
     </body>
 </html>
