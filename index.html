@@ -16,6 +16,18 @@
             background-color: black;
             color: white;
         }
+        figure {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            text-align: center;
+            margin-right: 10px;
+        }
+        figcaption {
+            font-size: 14px;
+            color: white;
+            margin-top: 5px;
+        }
         img {
             border-radius: 40px;
             max-width: 100%;
@@ -25,19 +37,35 @@
             font-size: 20;
             text-align: center;
         }
+        .gallery-container {
+            width: 100%;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            background-color: black;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .gallery img {
+            width: 350px;
+            height: auto;
+            margin-right: 10px;
+            display: inline-block;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
         a {
-        color: green; /* Change this to your desired color */
-        text-decoration: none; /* Optional: Remove underline */
+            color: green;
+            text-decoration: none;
         }
-
-        /* Styling for links that have been visited */
         a:visited {
-        color: green; /* Ensure visited links have the same color as non-visited */
+            color: green;
         }
-
-        /* Styling for links when hovered over */
         a:hover {
-        color: darkgreen; /* Change this to your desired hover color */
+            color: darkgreen;
         }
     </style>
 </head>
@@ -55,9 +83,6 @@
             <img src="images/headshot.jpeg">
         </div>
         <div class="social_media_links">
-            <a href="https://x.com/rohanchandracpe" target="_blank" style="text-decoration: none;">
-                <img src="images/x_icon.avif" style="max-width: 50px;">
-            </a>
             <a href="https://www.linkedin.com/in/rohanchandracpe/" target="_blank">
                 <img src="images/linkedin_logo.png" style="max-width: 50px;">
             </a>
@@ -68,7 +93,8 @@
                     <span style="font-size: 25;"><u>Table of Contents</u></span>
                 </strong>
                 <ul style="list-style-type: square;">
-                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#quick_intro">Quick Intro</a></li>
+                    <li><a href="#more_about_me">More About Me</a></li>
                     <li><a href="#notable_projects">Notable Projects</a></li>
                     <li><a href="#resume">Resume</a></li>
                     <li><a href="#featured_articles">Featured Articles</a></li>
@@ -76,11 +102,11 @@
                     <li><a href="#skills">Skills</a></li>
                 </ul>
             </div>
-            <section id="bio">
+            <section id="quick_intro">
                 <span style="font-size: 25;">
                     <strong>
                         <u>
-                            Bio
+                            Quick Intro
                         </u>
                     </strong>
                 </span>
@@ -91,11 +117,74 @@
                 I'm 24 years old, and am currently an Associate Software Engineer for Northrop Grumman,
                 working in their Dulles office. I have a BS in Computer Engineering with a Business Minor
                 from the University of Virginia (May, 2022). I'm currently pursuing a Master's of Science
-                in Robotics and Autonomous Systems from Johns Hopkins University (December, 2026). In my free
-                time I enjoy 3D-printing, crocheting, exercising, and card making!
-
-                Something interesting coming soon!
+                in Robotics and Autonomous Systems from Johns Hopkins University (December, 2026). <br><br>
             </p>
+            <section id="more_about_me">
+                <span style="font-size: 25;">
+                    <strong>
+                        <u>
+                            More About Me
+                        </u>
+                    </strong>
+                </span>
+            </section>
+            <p>
+                Outside of work, I love to do the following things:
+                <ul>
+                    <li> 
+                        <strong>
+                            Travel:
+                        </strong>
+                        I've been to over 10 countries, including Kenya, Peru, and Morocco, and I should be visiting Japan 
+                        next year!
+                    </li>
+                    <li> 
+                        <strong>
+                            3D-Printing:
+                        </strong>
+                        I built a Prusa I3 MK3S+ kit, and since then I have loved using it to print all sorts of creations, including
+                        the Hollow Knight figurine in the gallery.
+                    </li>
+                    <li> 
+                        <strong>
+                            Building Legos:
+                        </strong>
+                        I love to unwind by building Lego sets, and the Lego flowers in particular are so aesthetically pleasing. 
+                    </li>
+                </ul>
+            </p>
+            <div class="gallery-container">
+                <div class="gallery">
+                    <figure>
+                        <img src="images/IMG_1875.jpeg" alt="Image 1">
+                        <figcaption>Las Vegas Sign</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/IMG_5654.jpeg" alt="Image 2">
+                        <figcaption>Handmade Crochet Dinosaur</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/IMG_7456.jpeg" alt="Image 3">
+                        <figcaption>A Waterfall in Costa Rica</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/IMG_7727.jpeg" alt="Image 4">
+                        <figcaption>A Visit to the Hirshhorn</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/IMG_8271.jpeg" alt="Image 5">
+                        <figcaption>Seeing CHICAGO in NYC</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/IMG_8479.jpeg" alt="Image 6">
+                        <figcaption>3D Printed Hollow Knight</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/IMG_8480.jpeg" alt="Image 7">
+                        <figcaption>My LEGO Garden</figcaption>
+                    </figure>
+                </div>
+            </div>
             <section id="notable_projects">
                 <span style="font-size: 25;">
                     <strong>
