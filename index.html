@@ -95,6 +95,7 @@
                     <li><a href="#quick_intro">Quick Intro</a></li>
                     <li><a href="#hobbies_and_interests">Hobbies and Interests</a></li>
                     <li><a href="#notable_projects">Notable Projects</a></li>
+                    <li><a href="#academic_research_projects">Academic Research Projects</a></li>
                     <li><a href="#featured_articles">Featured Articles</a></li>
                     <li><a href="#skills">Skills</a></li>
                 </ul>
@@ -204,7 +205,7 @@
                             Skills: Python, RAG (Retrieval Augmented Generation), NLP (Natural Language Processing), LLMs (Large Language Models), Cohere, Streamlit
                         </span>
                         <p style="font-size: 16;">
-                            I built a RAG Powered AI Agent to synthesize the numerous hard-to-read, verbose, and scattered help articles
+                            I built a RAG Powered AI Agent to synthesize articles
                             on USDA.gov into a single source. Users could then send natural language queries to the chatbot and recieve
                             natural language responses back.
                             <strong style="background-color: green;">
@@ -223,19 +224,13 @@
                             Skills: Java, Python, OpenCV, Tensorflow, Video Editing, Public Speaking
                         </span>
                         <p style="font-size: 16;">
-                            Led the creation and development of the robotics software education program for 
-                            Nova Labs Robotics, ensuring that its 5 FTC (First Tech Challenge) teams receievd
-                            the training needed to become excellent developers and future leaders. <br><br>
-
-                            Established and taught RobotGo, an 8 week FTC Software bootcamp giving students
-                            hand-on experience with robotics programming concepts (object recognition, sensor fusion,
-                            obstacle avoidance, odometry, tele operation and autonomous movement) 
-                            and software development best practices e.g. using software version control systems.
-                            Video lectures were produced as well, and can be seen on the
+                            Led the creation and development of RobotGo, an 8 week FTC (First Tech Challenge) software bootcamp to give interested students
+                            introductory knowledge in core robotics concepts (object recognition, sensor fusion,
+                            obstacle avoidance, odometry, teleoperation and autonomous movement). Video lectures were produced as well, and can be seen on the
                             <a href="https://www.youtube.com/@novalabsyouthroboticsprogr5910/videos" target="_blank">
                                 Nova Labs Robotics YouTube channel.
-                            </a><br><br>
-
+                            </a>
+                            <br><br>
                             <strong style="background-color: green;">
                                 As a result, students have advanced to the state championships the past two seasons,
                                 and regularly volunteer to help rookie teams develop their own software skills.
@@ -274,7 +269,7 @@
                         </span>
                         <p style="font-size: 16;">
                             Created Virtual Fitness Trainer, an echoAR-powered augemented reality fitness app that 
-                            shows guides users in performing complex exercises like squats by providing them a human-like
+                            guides users in performing complex exercises like squats by providing them a human-like
                             avatar that they can follow. 
                             <strong style="background-color: green;">
                                 Achieved a finalist position in our category (Health and Wellness).
@@ -292,6 +287,58 @@
                             <img src="videos/vft_demonstration.gif" alt="Description of GIF" width="300">
 
                         </div>
+                        <br>
+                </ul>
+            </div>
+            <section id="academic_research_projects">
+                <span style="font-size: 25;">
+                    <strong>
+                        <u>
+                            Academic Research Projects
+                        </u>
+                    </strong>
+                </span>
+            </section>
+            <div>
+                <ul style="list-style-type: square;">
+                    <li><u>WALL-E: A Controlled Evaluation of Motion Control, Heading Estimation, and Object Ranging for a Low-Cost Inspection Rover</u></li>
+                        <span style="font-size: 14;">
+                            Johns Hopkins University, 2026 (with Aiperi Aya Yusupova) | Skills: ROS 2, micro-ROS, EKF, Raspberry Pi Pico, Depth Anything V2, Docker, Experimental Design
+                        </span>
+                        <p style="font-size: 16;">
+                            Designed a controlled protocol for evaluating motion control, heading estimation, and object ranging on a low-cost
+                            inspection rover, and ran a pilot of the motion experiments that completed all 17 trials with no failures.
+                            Checking against independent physical measurements caught errors the robot's own sensors hid, like a 0.15 m/s
+                            command actually running at about 0.27 m/s, and an apparent 69° turn that was really about 430°.
+                            <br><br>
+                            <a href="academic_research_projects/walle-pilot-paper.pdf" download>Download Paper (PDF)</a>
+                        </p>
+                        <br>
+                    <li><u>An Ablation Study of Deep Deterministic Policy Gradient</u></li>
+                        <span style="font-size: 14;">
+                            Johns Hopkins University, Fall 2025 | Skills: Python, Reinforcement Learning, DDPG, OpenAI Gymnasium, MuJoCo
+                        </span>
+                        <p style="font-size: 16;">
+                            Recreated the DDPG algorithm and matched the original paper's results on two of three MuJoCo environments, then ran
+                            an ablation study confirming that target networks and the experience replay buffer are both necessary.
+                            The study also found that a larger soft-update rate (τ) than the original authors used improves performance,
+                            while the replay buffer's size has little effect.
+                            <br><br>
+                            <a href="academic_research_projects/ddpg_ablation_study.pdf" download>Download Paper (PDF)</a>
+                        </p>
+                        <br>
+                    <li><u>Deep Learning Steganography: High-Capacity Embedding with Statistical Indistinguishability</u></li>
+                        <span style="font-size: 14;">
+                            Johns Hopkins University, 2025 (with Anwar Sleiman Haidar and Hassan Ul Haq) | Skills: Python, PyTorch, CNNs, Computer Vision
+                        </span>
+                        <p style="font-size: 16;">
+                            Built a deep learning model that hides a full-color image inside another, extending Baluja's encoder-decoder with a
+                            multi-branch architecture trained in L*a*b* color space. It hides 17.6 bits per pixel with near-invisible changes
+                            (43.6 dB PSNR), while steganalysis classifiers detect it no better than chance, and these results hold across
+                            image resolutions and datasets.
+                            <br><br>
+                            <a href="academic_research_projects/deep_learning_steganography.pdf" download>Download Paper (PDF)</a>
+                        </p>
                         <br>
                 </ul>
             </div>
